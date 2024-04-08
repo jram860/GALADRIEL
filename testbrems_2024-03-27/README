@@ -1,0 +1,31 @@
+This simulation has two objectives:
+
+(1) Find the energy deposition profile per layer, and the face-on (here xy-plane) spatial energy distribution per layer.
+
+(2) Find the "virtual" spatil profile of the side-on (yz/xz) energy deposition distribution for the whole beam.
+
+Need:
+
+-2d histograms:
+    -> xy/per layer. From there can get the y-axis projection using ROOT.
+-1d histogram:
+    -> yz and xz energy deposition
+    -> Energy deposition/event in each layer's detector.
+
+Relevant data required:
+-Energy deposition per layer
+-xyz-coordinate
+
+Also might want:
+-Energy distribution of bremsstrahlung created at from target. 
+
+
+First:
+Create simulation using monoenergetic pencil beam of gammas, then simulate a target (it should also be a sensitive detector of some kind to measure the brems energy distribution).
+
+
+
+Changes: need to get rid of the 'primary particle' arguments in each of the files, not relevant. Also fix the indexing, as of now the simulation is indexing the per-layer info incorrectly. 
+
+Access the position data in the event action class, and figure out how to store that information in a 2d histogram... make a SD? Cross reference Hadr_05, B5, and amsCal. 
+
