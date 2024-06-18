@@ -1,0 +1,96 @@
+#include "DetectorConstruction.hh"
+
+#include "G4RunManager.hh"
+#include "G4NistManager.hh"
+#include "G4Box.hh"
+#include "G4LogicalVolume.hh"
+#include "G4PVPlacement.hh"
+#include "G4SystemOfUnits.hh"
+
+
+DetectorConstruction::DetectorConstruction()
+{
+    NbOfLayers = 1;
+
+    ConstructMaterials();
+}
+
+DetectorConstruction::~DetectorConstruction()
+{}
+
+G4VPhysicalVolume* DetectorConstruction::Construct()
+{
+    G4bool checkOverlaps = true;
+    auto vacuum = G4Material::GetMaterial("G4_Galactic");
+    auto aluminum = G4Material::GetMaterial("G4_Al");
+    auto scintillator = G4Material::GetMaterial("G4_POLYETHYLENE");
+
+    G4double sizeXY = 10.*cm;
+    G4double filterZ = 20.*mm;
+    G4double scintZ = 5*mm;
+    G4double init_location = 3.*cm;
+
+    G4double worldXY = 1.5*sizeXY;
+    G4double worldZ = 5*(filterZ + scintZ);
+
+    auto worldSolid = new G4Box("World", 0.5*worldXY,0.5*worldXY,0.5*worldZ);
+    auto worldLogical = new G4LogicalVolume(worldSolid,vacuum,"World");
+    auto worldPhysical = new G4PVPlacement(nullptr,G4ThreeVector(),worldLogical,"World",nullptr,false,0,checkOverlaps);
+
+    G4ThreeVector zfilter = G4ThreeVector(0.,0.,init_location);
+    auto filterSolid = new G4Box("Filter",0.5*sizeXY,0.5*sizeXY,0.5*filterZ);
+    auto filterLogical = new G4LogicalVolume(filterSolid,aluminum,"Filter");
+    new G4PVPlacement(nullptr,zfilter,filterLogical,"Filter", worldLogical,false,1,checkOverlaps);
+
+    G4ThreeVector zscint = zfilter + G4ThreeVector(0.,0.,0.5*(filterZ + scintZ));
+    auto scintSolid = new G4Box("Scintillator",0.5*sizeXY,0.5*sizeXY,0.5*scintZ);
+    auto scintLogical = new G4LogicalVolume(scintSolid,scintillator, "Scintillator");
+    new G4PVPlacement(nullptr,zscint,scintLogical,"Scintillator", worldLogical,false,1,checkOverlaps);
+
+    fDetectorVol = filterLogical;
+    return worldPhysical;
+}
+
+
+G4VPhysicalVolume* DetectorConstruction::Construct()
+{
+    G4bool checkOverlaps = true;
+    //Generate materials
+    auto vacuum = G4Material::GetMaterial("G4_Galactic"); 
+    //generate filter materials:
+    auto aluminum = G4Material::GetMaterial("G4_Al");
+    //generate detector materials
+    auto fiberArrays = G4Material::GetMaterial("G4_POLYETHYLENE");
+
+    //place each material in order
+    filterMat[1] = aluminum;
+    detectorMat[1] = fiberArrays;
+
+    //These parameters are constant for the geometry
+    G4double sizeXY = 50.*mm;
+    G4double init_loc = 3.*cm;
+    G4double worldXY = 1.5*sizeXY;
+
+    
+}
+
+
+void DetectorConstruction::ConstructMaterials()
+{
+    auto nist = G4NistManager::Instance();
+
+    // Vacuum
+    nist->FindOrBuildMaterial("G4_Galactic");
+
+    // Filter materials
+    nist->FindOrBuildMaterial("G4_Al");
+
+    // ScintMaterial (in future build add the Lyso construction)
+    nist->FindOrBuildMaterial("G4_POLYETHYLENE");
+
+    G4cout<<G4endl<< "Filter Stack Material Choices: " << G4endl;
+    G4cout<< "-----------------------------------" << G4endl;
+    G4cout << *(G4Material::GetMaterialTable()) << G4endl;
+    G4cout<< "-----------------------------------" << G4endl;
+
+}
