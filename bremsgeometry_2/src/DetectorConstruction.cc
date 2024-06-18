@@ -63,13 +63,36 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     auto fiberArrays = G4Material::GetMaterial("G4_POLYETHYLENE");
 
     //place each material in order
-    filterMat[1] = aluminum;
-    detectorMat[1] = fiberArrays;
+    filterMat = aluminum;
+    detectorMat = fiberArrays;
 
+    G4double detectorThicknesses[]= {2.,2.,2.};
+    G4double filterThicknesses[] = {2.,4.,6.};
+
+    double init_pos = 5.*cm;
+    
+    size_t filterSize = sizeof(filterThicknesses)/sizeof(filterThicknesses[0]);
+    size_t detectorSize = sizeof(detectorThicknesses)/sizeof(detectorThicknesses[0]);
+
+    size_t NbOfLayers = detectorSize;
+    double midpoint[2*NbOfLayers];
+
+    double finalPos = stackPlacements(detectorThicknesses,detectorSize,filterThicknesses,filterSize,init_pos,midpoint,midposSize);
     //These parameters are constant for the geometry
     G4double sizeXY = 50.*mm;
     G4double init_loc = 3.*cm;
     G4double worldXY = 1.5*sizeXY;
+    G4double worldZ = 1.5 * finalPos;
+
+    auto worldSolid = new G4Box("World", 0.5*worldXY,0.5*worldXY,0.5*worldZ);
+    auto worldLogical = new G4LogicalVolume(worldSolid,vacuum,"World");
+    auto worldPhysical = new G4PVPlacement(nullptr,G4ThreeVector(),worldLogical,"World",nullptr,false,0,checkOverlaps);
+
+    
+
+
+
+
 
     
 }
@@ -93,4 +116,27 @@ void DetectorConstruction::ConstructMaterials()
     G4cout << *(G4Material::GetMaterialTable()) << G4endl;
     G4cout<< "-----------------------------------" << G4endl;
 
+}
+
+double stackPlacements(const double* detectorThicknesses, size_t detectorSize, const double* filterThicknesses, size_t filterSize, double init_pos,double* midpoint,size_t& midposSize){
+    double currentPos = init_pos;
+    midposSize = 0;
+    size_t maxSize = (detectorSize >=filterSize) ? detectorSize : filterSize; //this is just for robustness in case of user input error.
+
+    for (size_t i =0; i<maxSize; ++i) {
+        if (i < filterSize) {
+            double filterPos = currentPos + 0.5*filterThicknesses[i];
+            midpoint[midposSize++] = filterPos;
+            currentPos += filterThicknesses[i];
+        }
+
+        if (i < detectorSize) {
+            double detectorPos = currentPos + 0.5*detectorThicknesses[i];
+            midpoint[midposSize++] = detectorPos;
+            currentPos += detectorThicknesses[i];
+        }
+        
+    }
+
+    return currentPos;
 }

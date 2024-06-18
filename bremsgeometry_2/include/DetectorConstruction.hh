@@ -26,9 +26,11 @@ class DetectorConstruction : public G4VUserDetectorConstruction
         G4LogicalVolume* fDetectorVol = nullptr;
         G4int NbOfLayers;
 
-        G4double filterThickness[kMaxLayers];
-        G4Material* filterMat[kMaxLayers];
-        G4Material* detectorMat[kMaxLayers];
+        // G4Material* filterMat[kMaxLayers];
+        // G4Material* detectorMat[kMaxLayers];
+        G4Material* filterMat;
+        G4Material* detectorMat;
+        size_t midposSize;
 
 };
 
