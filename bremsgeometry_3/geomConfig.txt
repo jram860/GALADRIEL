@@ -1,0 +1,5 @@
+# Format: Type | Material | Thickness (mm)
+filter Pb 3
+detector Al 2
+filter W 1
+detector Al 8
