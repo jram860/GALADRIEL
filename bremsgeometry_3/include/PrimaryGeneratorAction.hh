@@ -11,9 +11,11 @@ class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
     public:
         PrimaryGeneratorAction();
-        ~PrimaryGeneratorAction();
+        virtual ~PrimaryGeneratorAction();
 
         virtual void GeneratePrimaries(G4Event*);
+
+    private:
         G4ParticleGun* fParticleGun;
 };
 

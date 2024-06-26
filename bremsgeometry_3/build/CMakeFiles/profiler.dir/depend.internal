@@ -457,41 +457,147 @@ CMakeFiles/profiler.dir/profiler.cc.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
 CMakeFiles/profiler.dir/src/ActionInitialization.cc.o
  ../include/ActionInitialization.hh
+ ../include/EventAction.hh
  ../include/PrimaryGeneratorAction.hh
+ ../include/RunAction.hh
+ ../include/SteppingAction.hh
  /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/ActionInitialization.cc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Normal3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Point3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Transform3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Transform3D.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Vector3D.h
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Units/PhysicalConstants.h
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Units/SystemOfUnits.h
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Utility/defs.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/AxisAngle.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/AxisAngle.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/LorentzVector.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/LorentzVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/Rotation.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/Rotation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationInterfaces.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationX.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationX.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationY.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationY.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationZ.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationZ.icc
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/ThreeVector.h
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AffineTransform.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AffineTransform.icc
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Allocator.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AllocatorPool.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AutoLock.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DCofThisEvent.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DataVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DataVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DensityEffectCalculator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DynamicParticle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DynamicParticle.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ElectronOccupancy.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Element.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ElementTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ElementVector.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4EnvironmentUtils.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Event.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Exception.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ExceptionSeverity.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4GeomSplitter.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4GlobalConfig.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4HCofThisEvent.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IonisParamElm.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IonisParamMat.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Isotope.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IsotopeVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Log.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LorentzVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Material.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialPropertiesIndex.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialPropertiesTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialPropertyVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationHistory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationHistory.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationHistoryPool.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevel.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevel.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevelRep.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevelRep.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4OrderedTable.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PDefManager.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleDefinition.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleDefinition.icc
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleGun.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleMomentum.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsFreeVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsModelCatalog.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsVectorType.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PrimaryParticle.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PrimaryVertex.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Profiler.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Profiler.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ReferenceCountedHandle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Region.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Region.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RotationMatrix.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SandiaTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Step.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Step.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StepPoint.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StepPoint.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StepStatus.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SteppingControl.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4String.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4String.icc
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SystemOfUnits.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4THitsCollection.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4THitsMap.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Threading.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ThreeVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHandle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHistory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHistory.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Track.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Track.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackStatus.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrajectoryContainer.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Transform3D.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Types.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserEventAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserRunAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserSteppingAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VDigiCollection.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VHitsCollection.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPhysicalVolume.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPhysicalVolume.icc
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPrimaryGenerator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VTouchable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VTrajectory.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VUserActionInitialization.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VUserEventInformation.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VUserTrackInformation.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ios.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/PTL/Globals.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/PTL/Types.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/PTL/Utility.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/evtdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/geomdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/geomwdefs.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/globals.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/pwdefs.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/templates.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/tls.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/trkdefs.hh
 CMakeFiles/profiler.dir/src/DetectorConstruction.cc.o
  ../include/DetectorConstruction.hh
  /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/DetectorConstruction.cc
@@ -584,6 +690,7 @@ CMakeFiles/profiler.dir/src/DetectorConstruction.cc.o
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Box.icc
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4CSGSolid.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ClassificationOfNewTrack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4CollectionNameVector.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Color.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Colour.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DCofThisEvent.hh
@@ -609,6 +716,7 @@ CMakeFiles/profiler.dir/src/DetectorConstruction.cc.o
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4GeomTypes.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4GlobalConfig.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4HCofThisEvent.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4HCtable.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ICRU90StoppingData.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IonisParamElm.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IonisParamMat.hh
@@ -617,6 +725,7 @@ CMakeFiles/profiler.dir/src/DetectorConstruction.cc.o
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Log.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolumeStore.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LorentzVector.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Material.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialPropertiesIndex.hh
@@ -683,7 +792,10 @@ CMakeFiles/profiler.dir/src/DetectorConstruction.cc.o
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RotationMatrix.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RunManager.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RunManagerKernel.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SDManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SDStructure.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SandiaTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SensitiveVolumeList.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartTrackStack.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelHeader.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelHeader.icc
@@ -734,17 +846,23 @@ CMakeFiles/profiler.dir/src/DetectorConstruction.cc.o
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VDigiCollection.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VExternalNavigation.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VGraphicsScene.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VHit.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VHitsCollection.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VNotifier.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPVParameterisation.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VParticleChange.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VParticleChange.icc
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPhysicalVolume.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPhysicalVolume.icc
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VProcess.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VReadOutGeometry.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSDFilter.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSensitiveDetector.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSolid.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSolid.icc
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSteppingVerbose.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VStoreNotifier.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VTouchable.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VTrajectory.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VUserDetectorConstruction.hh
@@ -771,6 +889,266 @@ CMakeFiles/profiler.dir/src/DetectorConstruction.cc.o
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/geomwdefs.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/globals.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/graphics_reps_defs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/pwdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/rundefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/templates.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/tls.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/trkdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/trkgdefs.hh
+CMakeFiles/profiler.dir/src/EventAction.cc.o
+ ../include/EventAction.hh
+ /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/EventAction.cc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Normal3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Point3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Transform3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Transform3D.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Vector3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/DualRand.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/JamesRandom.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/MTwistEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/MixMaxRng.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBinomial.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBinomial.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBit.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBit.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBreitWigner.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBreitWigner.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandChiSquare.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandChiSquare.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandExpZiggurat.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandExponential.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandExponential.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandFlat.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandFlat.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGamma.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGamma.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGauss.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGauss.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGaussQ.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGaussQ.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGaussZiggurat.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGeneral.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGeneral.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandLandau.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandLandau.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandPoisson.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandPoisson.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandPoissonQ.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandPoissonQ.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandStudentT.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandStudentT.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/Random.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/Random.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandomEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandomEngine.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/Randomize.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RanecuEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/Ranlux64Engine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RanluxEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RanluxppEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RanshiEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Units/PhysicalConstants.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Units/SystemOfUnits.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Utility/defs.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Utility/memory.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Utility/thread_local.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/AxisAngle.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/AxisAngle.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/LorentzVector.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/LorentzVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/Rotation.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/Rotation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationInterfaces.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationX.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationX.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationY.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationY.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationZ.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationZ.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/ThreeVector.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AffineTransform.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AffineTransform.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Allocator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AllocatorPool.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ApplicationState.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AutoLock.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AuxiliaryNavServices.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AuxiliaryNavServices.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4BlockingList.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4BlockingList.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ClassificationOfNewTrack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4CollectionNameVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DCofThisEvent.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DataVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DataVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DensityEffectCalculator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DynamicParticle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DynamicParticle.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ElectronOccupancy.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Element.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ElementTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ElementVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4EnvironmentUtils.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Event.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4EventManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Exception.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ExceptionSeverity.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ForceCondition.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4GPILSelection.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4GeomSplitter.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4GlobalConfig.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4HCofThisEvent.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4HCtable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IonisParamElm.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IonisParamMat.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Isotope.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IsotopeVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Log.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LorentzVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Material.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialPropertiesIndex.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialPropertiesTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialPropertyVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationHistory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationHistory.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationHistoryPool.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevel.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevel.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevelRep.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevelRep.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLogger.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Navigator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Navigator.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NoProcess.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NormalNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NormalNavigation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4OrderedTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PDefManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParameterisedNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParameterisedNavigation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleChange.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleChange.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleDefinition.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleDefinition.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleMomentum.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleTable.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleTableIterator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsFreeVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsModelCatalog.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsTable.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsVectorType.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PrimaryParticle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PrimaryTransformer.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PrimaryVertex.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessManager.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessType.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Profiler.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Profiler.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ReferenceCountedHandle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Region.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Region.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RegularNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ReplicaNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ReplicaNavigation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RotationMatrix.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RunManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RunManagerKernel.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SDManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SDStructure.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SandiaTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SensitiveVolumeList.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartTrackStack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelHeader.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelHeader.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelNode.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelNode.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelProxy.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelProxy.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StackManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StackedTrack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Step.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Step.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StepPoint.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StepPoint.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StepStatus.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SteppingControl.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SteppingManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4String.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4String.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SubEvent.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SubEventTrackStack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4THitsCollection.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4THitsMap.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Threading.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ThreeVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHandle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHistory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHistory.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Track.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Track.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackStack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackStatus.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackingManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackingMessenger.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrajectoryContainer.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Transform3D.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Types.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UIcommand.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UIdirectory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UImessenger.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UIparameter.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UItokenNum.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserEventAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserStackingAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserSteppingAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserTrackingAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VDigiCollection.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VExternalNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VHit.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VHitsCollection.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPVParameterisation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VParticleChange.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VParticleChange.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPhysicalVolume.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPhysicalVolume.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VProcess.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VReadOutGeometry.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSDFilter.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSensitiveDetector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSolid.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSolid.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSteppingVerbose.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VTouchable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VTrajectory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VUserEventInformation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VUserTrackInformation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VVolumeMaterialScanner.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VoxelNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VoxelNavigation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ios.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/PTL/Globals.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/PTL/Types.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/PTL/Utility.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/Randomize.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/evtdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/geomdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/geomwdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/globals.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/pwdefs.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/rundefs.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/templates.hh
@@ -831,3 +1209,503 @@ CMakeFiles/profiler.dir/src/PrimaryGeneratorAction.cc.o
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/pwdefs.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/templates.hh
  /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/tls.hh
+CMakeFiles/profiler.dir/src/RunAction.cc.o
+ ../include/RunAction.hh
+ ../include/SteppingAction.hh
+ /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/RunAction.cc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Normal3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Point3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Transform3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Transform3D.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Vector3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/DualRand.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/JamesRandom.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/MTwistEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/MixMaxRng.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBinomial.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBinomial.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBit.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBit.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBreitWigner.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBreitWigner.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandChiSquare.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandChiSquare.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandExpZiggurat.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandExponential.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandExponential.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandFlat.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandFlat.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGamma.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGamma.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGauss.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGauss.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGaussQ.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGaussQ.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGaussZiggurat.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGeneral.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGeneral.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandLandau.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandLandau.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandPoisson.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandPoisson.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandPoissonQ.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandPoissonQ.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandStudentT.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandStudentT.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/Random.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/Random.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandomEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandomEngine.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/Randomize.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RanecuEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/Ranlux64Engine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RanluxEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RanluxppEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RanshiEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Units/PhysicalConstants.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Units/SystemOfUnits.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Utility/defs.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Utility/memory.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Utility/thread_local.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/AxisAngle.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/AxisAngle.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/LorentzVector.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/LorentzVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/Rotation.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/Rotation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationInterfaces.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationX.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationX.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationY.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationY.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationZ.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationZ.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/ThreeVector.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AffineTransform.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AffineTransform.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Allocator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AllocatorPool.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ApplicationState.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AutoLock.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AuxiliaryNavServices.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AuxiliaryNavServices.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4BlockingList.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4BlockingList.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ClassificationOfNewTrack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DCofThisEvent.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DataVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DataVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DensityEffectCalculator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DynamicParticle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DynamicParticle.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ElectronOccupancy.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Element.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ElementTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ElementVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4EnvironmentUtils.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Event.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4EventManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Exception.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ExceptionSeverity.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ForceCondition.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4GPILSelection.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4GeomSplitter.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4GlobalConfig.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4HCofThisEvent.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IonisParamElm.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IonisParamMat.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Isotope.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IsotopeVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Log.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LorentzVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Material.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialPropertiesIndex.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialPropertiesTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialPropertyVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationHistory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationHistory.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationHistoryPool.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevel.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevel.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevelRep.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevelRep.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLogger.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Navigator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Navigator.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NoProcess.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NormalNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NormalNavigation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4OrderedTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PDefManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParameterisedNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParameterisedNavigation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleChange.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleChange.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleDefinition.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleDefinition.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleMomentum.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleTable.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleTableIterator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsFreeVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsModelCatalog.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsTable.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsVectorType.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PrimaryParticle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PrimaryTransformer.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PrimaryVertex.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessManager.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessType.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Profiler.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Profiler.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ReferenceCountedHandle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Region.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Region.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RegularNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ReplicaNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ReplicaNavigation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RotationMatrix.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Run.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RunManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RunManagerKernel.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SandiaTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartTrackStack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelHeader.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelHeader.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelNode.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelNode.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelProxy.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelProxy.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StackManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StackedTrack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Step.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Step.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StepPoint.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StepPoint.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StepStatus.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SteppingControl.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SteppingManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4String.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4String.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SubEvent.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SubEventTrackStack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Threading.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ThreeVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHandle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHistory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHistory.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Track.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Track.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackStack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackStatus.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackingManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackingMessenger.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrajectoryContainer.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Transform3D.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Types.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UIcommand.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UIdirectory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UImessenger.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UIparameter.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UItokenNum.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserRunAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserStackingAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserSteppingAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserTrackingAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VDigiCollection.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VExternalNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VHitsCollection.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPVParameterisation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VParticleChange.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VParticleChange.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPhysicalVolume.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPhysicalVolume.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VProcess.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSolid.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSolid.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSteppingVerbose.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VTouchable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VTrajectory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VUserEventInformation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VUserTrackInformation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VVolumeMaterialScanner.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VoxelNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VoxelNavigation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ios.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/PTL/Globals.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/PTL/Types.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/PTL/Utility.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/Randomize.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/evtdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/geomdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/geomwdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/globals.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/pwdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/rundefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/templates.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/tls.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/trkdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/trkgdefs.hh
+CMakeFiles/profiler.dir/src/SteppingAction.cc.o
+ ../include/SteppingAction.hh
+ /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/SteppingAction.cc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Normal3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Point3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Transform3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Transform3D.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Geometry/Vector3D.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/DualRand.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/JamesRandom.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/MTwistEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/MixMaxRng.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBinomial.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBinomial.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBit.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBit.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBreitWigner.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandBreitWigner.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandChiSquare.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandChiSquare.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandExpZiggurat.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandExponential.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandExponential.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandFlat.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandFlat.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGamma.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGamma.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGauss.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGauss.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGaussQ.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGaussQ.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGaussZiggurat.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGeneral.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandGeneral.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandLandau.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandLandau.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandPoisson.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandPoisson.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandPoissonQ.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandPoissonQ.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandStudentT.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandStudentT.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/Random.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/Random.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandomEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RandomEngine.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/Randomize.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RanecuEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/Ranlux64Engine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RanluxEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RanluxppEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Random/RanshiEngine.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Units/PhysicalConstants.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Units/SystemOfUnits.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Utility/defs.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Utility/memory.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Utility/thread_local.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/AxisAngle.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/AxisAngle.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/LorentzVector.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/LorentzVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/Rotation.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/Rotation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationInterfaces.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationX.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationX.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationY.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationY.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationZ.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/RotationZ.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/ThreeVector.h
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/CLHEP/Vector/ThreeVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AffineTransform.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AffineTransform.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Allocator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AllocatorPool.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ApplicationState.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AutoLock.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AuxiliaryNavServices.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4AuxiliaryNavServices.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4BlockingList.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4BlockingList.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ClassificationOfNewTrack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DCofThisEvent.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DataVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DataVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DensityEffectCalculator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DynamicParticle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4DynamicParticle.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ElectronOccupancy.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Element.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ElementTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ElementVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4EnvironmentUtils.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Event.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4EventManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Exception.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ExceptionSeverity.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ForceCondition.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4GPILSelection.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4GeomSplitter.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4GlobalConfig.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4HCofThisEvent.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IonisParamElm.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IonisParamMat.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Isotope.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4IsotopeVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Log.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LorentzVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Material.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialPropertiesIndex.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialPropertiesTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialPropertyVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4MaterialTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationHistory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationHistory.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationHistoryPool.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevel.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevel.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevelRep.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLevelRep.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NavigationLogger.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Navigator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Navigator.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NoProcess.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NormalNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4NormalNavigation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4OrderedTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PDefManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParameterisedNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParameterisedNavigation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleChange.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleChange.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleDefinition.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleDefinition.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleMomentum.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleTable.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ParticleTableIterator.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsFreeVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsModelCatalog.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsTable.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PhysicsVectorType.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PrimaryParticle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PrimaryTransformer.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4PrimaryVertex.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessManager.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessType.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ProcessVector.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Profiler.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Profiler.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ReferenceCountedHandle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Region.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Region.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RegularNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ReplicaNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ReplicaNavigation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RotationMatrix.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RunManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4RunManagerKernel.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SandiaTable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartTrackStack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelHeader.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelHeader.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelNode.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelNode.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelProxy.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SmartVoxelProxy.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StackManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StackedTrack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Step.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Step.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StepPoint.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StepPoint.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4StepStatus.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SteppingControl.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SteppingManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4String.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4String.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SubEvent.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SubEventTrackStack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SystemOfUnits.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Threading.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ThreeVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHandle.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHistory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHistory.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Track.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Track.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackStack.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackStatus.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackVector.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackingManager.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrackingMessenger.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TrajectoryContainer.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Transform3D.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Types.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UIcommand.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UIdirectory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UImessenger.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UIparameter.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UItokenNum.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserStackingAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserSteppingAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserTrackingAction.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VDigiCollection.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VExternalNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VHitsCollection.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPVParameterisation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VParticleChange.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VParticleChange.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPhysicalVolume.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPhysicalVolume.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VProcess.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSolid.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSolid.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSteppingVerbose.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VTouchable.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VTrajectory.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VUserEventInformation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VUserTrackInformation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VVolumeMaterialScanner.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VoxelNavigation.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VoxelNavigation.icc
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ios.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/PTL/Globals.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/PTL/Types.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/PTL/Utility.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/Randomize.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/evtdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/geomdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/geomwdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/globals.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/pwdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/rundefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/templates.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/tls.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/trkdefs.hh
+ /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/trkgdefs.hh

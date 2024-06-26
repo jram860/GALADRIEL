@@ -96,9 +96,22 @@ CMakeFiles/profiler.dir/src/DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/profiler.dir/src/DetectorConstruction.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/DetectorConstruction.cc -o CMakeFiles/profiler.dir/src/DetectorConstruction.cc.s
 
+CMakeFiles/profiler.dir/src/EventAction.cc.o: CMakeFiles/profiler.dir/flags.make
+CMakeFiles/profiler.dir/src/EventAction.cc.o: ../src/EventAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/profiler.dir/src/EventAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/profiler.dir/src/EventAction.cc.o -c /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/EventAction.cc
+
+CMakeFiles/profiler.dir/src/EventAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/profiler.dir/src/EventAction.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/EventAction.cc > CMakeFiles/profiler.dir/src/EventAction.cc.i
+
+CMakeFiles/profiler.dir/src/EventAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/profiler.dir/src/EventAction.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/EventAction.cc -o CMakeFiles/profiler.dir/src/EventAction.cc.s
+
 CMakeFiles/profiler.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/profiler.dir/flags.make
 CMakeFiles/profiler.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/profiler.dir/src/PrimaryGeneratorAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/profiler.dir/src/PrimaryGeneratorAction.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/profiler.dir/src/PrimaryGeneratorAction.cc.o -c /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/profiler.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
@@ -109,12 +122,41 @@ CMakeFiles/profiler.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/profiler.dir/src/PrimaryGeneratorAction.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/PrimaryGeneratorAction.cc -o CMakeFiles/profiler.dir/src/PrimaryGeneratorAction.cc.s
 
+CMakeFiles/profiler.dir/src/RunAction.cc.o: CMakeFiles/profiler.dir/flags.make
+CMakeFiles/profiler.dir/src/RunAction.cc.o: ../src/RunAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/profiler.dir/src/RunAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/profiler.dir/src/RunAction.cc.o -c /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/RunAction.cc
+
+CMakeFiles/profiler.dir/src/RunAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/profiler.dir/src/RunAction.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/RunAction.cc > CMakeFiles/profiler.dir/src/RunAction.cc.i
+
+CMakeFiles/profiler.dir/src/RunAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/profiler.dir/src/RunAction.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/RunAction.cc -o CMakeFiles/profiler.dir/src/RunAction.cc.s
+
+CMakeFiles/profiler.dir/src/SteppingAction.cc.o: CMakeFiles/profiler.dir/flags.make
+CMakeFiles/profiler.dir/src/SteppingAction.cc.o: ../src/SteppingAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/profiler.dir/src/SteppingAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/profiler.dir/src/SteppingAction.cc.o -c /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/SteppingAction.cc
+
+CMakeFiles/profiler.dir/src/SteppingAction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/profiler.dir/src/SteppingAction.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/SteppingAction.cc > CMakeFiles/profiler.dir/src/SteppingAction.cc.i
+
+CMakeFiles/profiler.dir/src/SteppingAction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/profiler.dir/src/SteppingAction.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/SteppingAction.cc -o CMakeFiles/profiler.dir/src/SteppingAction.cc.s
+
 # Object files for target profiler
 profiler_OBJECTS = \
 "CMakeFiles/profiler.dir/profiler.cc.o" \
 "CMakeFiles/profiler.dir/src/ActionInitialization.cc.o" \
 "CMakeFiles/profiler.dir/src/DetectorConstruction.cc.o" \
-"CMakeFiles/profiler.dir/src/PrimaryGeneratorAction.cc.o"
+"CMakeFiles/profiler.dir/src/EventAction.cc.o" \
+"CMakeFiles/profiler.dir/src/PrimaryGeneratorAction.cc.o" \
+"CMakeFiles/profiler.dir/src/RunAction.cc.o" \
+"CMakeFiles/profiler.dir/src/SteppingAction.cc.o"
 
 # External object files for target profiler
 profiler_EXTERNAL_OBJECTS =
@@ -122,7 +164,10 @@ profiler_EXTERNAL_OBJECTS =
 profiler: CMakeFiles/profiler.dir/profiler.cc.o
 profiler: CMakeFiles/profiler.dir/src/ActionInitialization.cc.o
 profiler: CMakeFiles/profiler.dir/src/DetectorConstruction.cc.o
+profiler: CMakeFiles/profiler.dir/src/EventAction.cc.o
 profiler: CMakeFiles/profiler.dir/src/PrimaryGeneratorAction.cc.o
+profiler: CMakeFiles/profiler.dir/src/RunAction.cc.o
+profiler: CMakeFiles/profiler.dir/src/SteppingAction.cc.o
 profiler: CMakeFiles/profiler.dir/build.make
 profiler: /home/jram1/Software/geant4/geant4-v11.2.0-install/lib/libG4Tree.so
 profiler: /home/jram1/Software/geant4/geant4-v11.2.0-install/lib/libG4FR.so
@@ -164,7 +209,7 @@ profiler: /home/jram1/Software/geant4/geant4-v11.2.0-install/lib/libG4global.so
 profiler: /home/jram1/Software/geant4/geant4-v11.2.0-install/lib/libG4clhep.so
 profiler: /home/jram1/Software/geant4/geant4-v11.2.0-install/lib/libG4ptl.so.2.3.3
 profiler: CMakeFiles/profiler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable profiler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable profiler"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/profiler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

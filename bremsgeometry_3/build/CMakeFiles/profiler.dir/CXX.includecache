@@ -22,6 +22,18 @@ vector
 string
 -
 
+../include/EventAction.hh
+G4UserEventAction.hh
+../include/G4UserEventAction.hh
+G4Event.hh
+../include/G4Event.hh
+G4THitsMap.hh
+../include/G4THitsMap.hh
+map
+-
+string
+-
+
 ../include/PrimaryGeneratorAction.hh
 G4VUserPrimaryGeneratorAction.hh
 ../include/G4VUserPrimaryGeneratorAction.hh
@@ -33,6 +45,22 @@ G4SystemOfUnits.hh
 ../include/G4SystemOfUnits.hh
 G4ParticleGun.hh
 ../include/G4ParticleGun.hh
+
+../include/RunAction.hh
+G4UserRunAction.hh
+../include/G4UserRunAction.hh
+
+../include/SteppingAction.hh
+G4UserSteppingAction.hh
+../include/G4UserSteppingAction.hh
+G4Step.hh
+../include/G4Step.hh
+G4LogicalVolume.hh
+../include/G4LogicalVolume.hh
+map
+-
+string
+-
 
 /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/profiler.cc
 iostream
@@ -61,6 +89,12 @@ ActionInitialization.hh
 /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/ActionInitialization.hh
 PrimaryGeneratorAction.hh
 /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/PrimaryGeneratorAction.hh
+RunAction.hh
+/home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/RunAction.hh
+EventAction.hh
+/home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/EventAction.hh
+SteppingAction.hh
+/home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/SteppingAction.hh
 
 /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/DetectorConstruction.cc
 DetectorConstruction.hh
@@ -73,6 +107,8 @@ G4Box.hh
 /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/G4Box.hh
 G4LogicalVolume.hh
 /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/G4LogicalVolume.hh
+G4LogicalVolumeStore.hh
+/home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/G4LogicalVolumeStore.hh
 G4SystemOfUnits.hh
 /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/G4SystemOfUnits.hh
 G4PVPlacement.hh
@@ -81,6 +117,8 @@ G4VisAttributes.hh
 /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/G4VisAttributes.hh
 G4Color.hh
 /home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/G4Color.hh
+G4SDManager.hh
+/home/jram1/Geant/CY2024/public_uploads/Geant4_Projects/bremsgeometry_3/src/G4SDManager.hh
 fstream
 -
 sstream
@@ -770,6 +808,12 @@ vector
 
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ClassificationOfNewTrack.hh
 
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4CollectionNameVector.hh
+globals.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/globals.hh
+vector
+-
+
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Color.hh
 G4Colour.hh
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Colour.hh
@@ -1046,6 +1090,12 @@ globals.hh
 vector
 -
 
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4HCtable.hh
+globals.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/globals.hh
+vector
+-
+
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4HepRepFile.hh
 G4VGraphicsSystem.hh
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VGraphicsSystem.hh
@@ -1129,6 +1179,16 @@ G4LogicalVolume.icc
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.icc
 
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.icc
+
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolumeStore.hh
+vector
+-
+map
+-
+G4LogicalVolume.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.hh
+G4VStoreNotifier.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VStoreNotifier.hh
 
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LorentzVector.hh
 CLHEP/Vector/LorentzVector.h
@@ -2060,6 +2120,26 @@ G4EventManager.hh
 globals.hh
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/globals.hh
 
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SDManager.hh
+G4HCtable.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4HCtable.hh
+G4SDStructure.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SDStructure.hh
+globals.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/globals.hh
+G4VSDFilter.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSDFilter.hh
+vector
+-
+
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SDStructure.hh
+G4VSensitiveDetector.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSensitiveDetector.hh
+globals.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/globals.hh
+vector
+-
+
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SandiaTable.hh
 G4OrderedTable.hh
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4OrderedTable.hh
@@ -2117,6 +2197,14 @@ list
 -
 map
 -
+vector
+-
+
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SensitiveVolumeList.hh
+G4LogicalVolume.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4LogicalVolume.hh
+G4VPhysicalVolume.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPhysicalVolume.hh
 vector
 -
 
@@ -2964,6 +3052,12 @@ G4UnitsTable.icc
 
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UnitsTable.icc
 
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserEventAction.hh
+
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserRunAction.hh
+G4Types.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Types.hh
+
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4UserStackingAction.hh
 G4ClassificationOfNewTrack.hh
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ClassificationOfNewTrack.hh
@@ -3114,6 +3208,8 @@ vector
 G4ThreeVector.hh
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4ThreeVector.hh
 
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VNotifier.hh
+
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VPVParameterisation.hh
 G4Types.hh
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Types.hh
@@ -3206,6 +3302,18 @@ G4ProcessType.hh
 G4VGraphicsSystem.hh
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VGraphicsSystem.hh
 
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VReadOutGeometry.hh
+G4SensitiveVolumeList.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4SensitiveVolumeList.hh
+G4Step.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Step.hh
+G4TouchableHistory.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHistory.hh
+
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSDFilter.hh
+globals.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/globals.hh
+
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSceneHandler.hh
 globals.hh
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/globals.hh
@@ -3223,6 +3331,22 @@ G4VSceneHandler.icc
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSceneHandler.icc
 
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSceneHandler.icc
+
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSensitiveDetector.hh
+G4CollectionNameVector.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4CollectionNameVector.hh
+G4HCofThisEvent.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4HCofThisEvent.hh
+G4Step.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4Step.hh
+G4TouchableHistory.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4TouchableHistory.hh
+G4VHit.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VHit.hh
+G4VReadOutGeometry.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VReadOutGeometry.hh
+G4VSDFilter.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSDFilter.hh
 
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VSolid.hh
 G4Types.hh
@@ -3265,6 +3389,10 @@ trkgdefs.hh
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/trkgdefs.hh
 vector
 -
+
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VStoreNotifier.hh
+G4VNotifier.hh
+/home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VNotifier.hh
 
 /home/jram1/Software/geant4/geant4-v11.2.0-install/include/Geant4/G4VTouchable.hh
 G4TouchableHistory.hh

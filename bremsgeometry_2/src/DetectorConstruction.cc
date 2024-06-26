@@ -10,8 +10,6 @@
 
 DetectorConstruction::DetectorConstruction()
 {
-    NbOfLayers = 1;
-
     ConstructMaterials();
 }
 
@@ -75,6 +73,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     size_t detectorSize = sizeof(detectorThicknesses)/sizeof(detectorThicknesses[0]);
 
     size_t NbOfLayers = detectorSize;
+
     double midpoint[2*NbOfLayers];
 
     double finalPos = stackPlacements(detectorThicknesses,detectorSize,filterThicknesses,filterSize,init_pos,midpoint,midposSize);
@@ -83,10 +82,15 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     G4double init_loc = 3.*cm;
     G4double worldXY = 1.5*sizeXY;
     G4double worldZ = 1.5 * finalPos;
-
+    
+    // create wolrd geometry
     auto worldSolid = new G4Box("World", 0.5*worldXY,0.5*worldXY,0.5*worldZ);
     auto worldLogical = new G4LogicalVolume(worldSolid,vacuum,"World");
     auto worldPhysical = new G4PVPlacement(nullptr,G4ThreeVector(),worldLogical,"World",nullptr,false,0,checkOverlaps);
+
+    //create detector geometry
+    auto detectorSolid[i] = new G4Box("Detector", 0.5*sizeXY, 0.5*sizeXY,0.5*detectorThicknesses[i]);
+    auto detectorLogical[i] = new G4LogicalVolume(detectorSolid[i],detectorMat,)
 
     
 

@@ -1,0 +1,43 @@
+#include "SensitiveDetector.hh"
+
+#include "G4SDManager.hh"
+#include "G4Step.hh"
+#include "G4TouchableHistory.hh"
+#include "G4VTouchable.hh"
+#include "G4RunManager.hh"
+#include "G4SystemOfUnits.hh"
+#include <iostream>
+
+SensitiveDetector::SensitiveDetector(const G4String& name)
+    : G4VSensitiveDetector(name) {
+        collectionName.insert("CalorHitsCollection");
+    }
+
+SensitiveDetector::~SensitiveDetector() {}
+
+void SensitiveDetector::Initialize(G4HCofThisEvent* hce) {
+    hitsCollection = new CalorHitsCollection(SensitiveDetectorName, collectionName[0]);
+    static G4int hcID = -1;
+    if (hcID < 0) {
+        hcID = G4SDManager::GetSDMpointer()->GetCollectionID(hitsCollection);
+    }
+    hce->AddHitsCollection(hcID, hitsCollection);
+}
+
+G4bool SensitiveDetector::ProcessHits(G4Step* step, G4TouchableHistory*) {
+    G4double edep = step->GetTotalEnergyDeposit();
+    if (edep == 0.) return false;
+
+    CalorHit* newHit = new CalorHit();
+    newHit->detectorID = step->GetPreStepPoint()->GetTouchableHandle()->GetCopyNumber();
+    newHit->energyDeposited = edep;
+    hitsCollection->insert(newHit);
+    return true;
+}
+
+void SensitiveDetector::EndOfEvent(G4HCofThisEvent* hce) {
+    for (size_t i = 0; i < hitsCollection->entries(); i++) {
+        G4cout << "Detector " << (*hitsCollection)[i]->detectorID
+               << ": " << (*hitsCollection)[i]->energyDeposited / keV << " keV" << G4endl;
+    }
+}

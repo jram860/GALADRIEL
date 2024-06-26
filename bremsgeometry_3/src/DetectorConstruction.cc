@@ -3,11 +3,13 @@
 #include "G4RunManager.hh"
 #include "G4Box.hh"
 #include "G4LogicalVolume.hh"
+#include "G4LogicalVolumeStore.hh"
 #include "G4SystemOfUnits.hh"
 
 #include "G4PVPlacement.hh"
 #include "G4VisAttributes.hh"
 #include "G4Color.hh"
+#include "G4SDManager.hh"
 
 #include <fstream>
 #include <sstream>
@@ -29,6 +31,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct() {
     ConstructProfiler(layers,logicWorld);
 
     return physWorld;
+
 }
 
 std::vector<Layer> DetectorConstruction::ReadConfig(const std::string& filename) {
@@ -75,4 +78,5 @@ void DetectorConstruction::ConstructProfiler(const std::vector<Layer>& layers,G4
         }
         logicLayer->SetVisAttributes(visAttr);
     }
+
 }
