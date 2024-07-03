@@ -1,8 +1,0 @@
-/home/jram1/Geant/CY2024/BremsSpecCSV/build/CMakeFiles/install/strip.dir
-/home/jram1/Geant/CY2024/BremsSpecCSV/build/CMakeFiles/install.dir
-/home/jram1/Geant/CY2024/BremsSpecCSV/build/CMakeFiles/list_install_components.dir
-/home/jram1/Geant/CY2024/BremsSpecCSV/build/CMakeFiles/rebuild_cache.dir
-/home/jram1/Geant/CY2024/BremsSpecCSV/build/CMakeFiles/edit_cache.dir
-/home/jram1/Geant/CY2024/BremsSpecCSV/build/CMakeFiles/install/local.dir
-/home/jram1/Geant/CY2024/BremsSpecCSV/build/CMakeFiles/BREMSSPEC.dir
-/home/jram1/Geant/CY2024/BremsSpecCSV/build/CMakeFiles/bremsSpec.dir

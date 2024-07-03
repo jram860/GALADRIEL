@@ -1,0 +1,10 @@
+    /run/initialize
+    /run/verbose 0
+    /control/verbose 0
+    /vis/verbose 0
+    /process/verbose 0
+    /tracking/verbose 0
+    /gun/particle e-
+    /gun/energy {Ekin} keV
+    /run/beamOn 6000000
+    /run/printProgress 1000000

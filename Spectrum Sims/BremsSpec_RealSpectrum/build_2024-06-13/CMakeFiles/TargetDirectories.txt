@@ -1,8 +1,0 @@
-/home/jram1/Geant/CY2024/Spectrum Sims/BremsSpec_RealSpectrum/build_2024-06-13/CMakeFiles/install/strip.dir
-/home/jram1/Geant/CY2024/Spectrum Sims/BremsSpec_RealSpectrum/build_2024-06-13/CMakeFiles/install.dir
-/home/jram1/Geant/CY2024/Spectrum Sims/BremsSpec_RealSpectrum/build_2024-06-13/CMakeFiles/list_install_components.dir
-/home/jram1/Geant/CY2024/Spectrum Sims/BremsSpec_RealSpectrum/build_2024-06-13/CMakeFiles/rebuild_cache.dir
-/home/jram1/Geant/CY2024/Spectrum Sims/BremsSpec_RealSpectrum/build_2024-06-13/CMakeFiles/edit_cache.dir
-/home/jram1/Geant/CY2024/Spectrum Sims/BremsSpec_RealSpectrum/build_2024-06-13/CMakeFiles/install/local.dir
-/home/jram1/Geant/CY2024/Spectrum Sims/BremsSpec_RealSpectrum/build_2024-06-13/CMakeFiles/BREMSSPEC.dir
-/home/jram1/Geant/CY2024/Spectrum Sims/BremsSpec_RealSpectrum/build_2024-06-13/CMakeFiles/bremsSpec.dir

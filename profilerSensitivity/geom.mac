@@ -1,0 +1,12 @@
+# Define filter thicknesses in mm
+/StackGeometry/setFilterThicknesses 2 2 4 4 6 6
+
+# Define detector thicknesses in mm
+/StackGeometry/setDetectorThicknesses 0.5 0.5 0.5 0.5 0.5 0.5
+
+# Define materials for filters
+/StackGeometry/setFilterMaterials G4_Al G4_Al G4_Sn G4_Sn G4_W G4_W
+
+# Define materials for detectors
+/StackGeometry/setDetectorMaterials G4_POLYETHYLENE G4_POLYETHYLENE G4_POLYETHYLENE G4_POLYETHYLENE G4_POLYETHYLENE G4_POLYETHYLENE 
+

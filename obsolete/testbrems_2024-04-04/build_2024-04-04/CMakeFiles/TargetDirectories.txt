@@ -1,8 +1,0 @@
-/home/jram1/Geant/CY2024/TestingScripts/testbrems_2024-04-04/build_2024-04-04/CMakeFiles/install/strip.dir
-/home/jram1/Geant/CY2024/TestingScripts/testbrems_2024-04-04/build_2024-04-04/CMakeFiles/install/local.dir
-/home/jram1/Geant/CY2024/TestingScripts/testbrems_2024-04-04/build_2024-04-04/CMakeFiles/install.dir
-/home/jram1/Geant/CY2024/TestingScripts/testbrems_2024-04-04/build_2024-04-04/CMakeFiles/list_install_components.dir
-/home/jram1/Geant/CY2024/TestingScripts/testbrems_2024-04-04/build_2024-04-04/CMakeFiles/rebuild_cache.dir
-/home/jram1/Geant/CY2024/TestingScripts/testbrems_2024-04-04/build_2024-04-04/CMakeFiles/edit_cache.dir
-/home/jram1/Geant/CY2024/TestingScripts/testbrems_2024-04-04/build_2024-04-04/CMakeFiles/BALROG.dir
-/home/jram1/Geant/CY2024/TestingScripts/testbrems_2024-04-04/build_2024-04-04/CMakeFiles/balrog.dir
