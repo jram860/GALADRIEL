@@ -9,6 +9,7 @@
 
 G4VPhysicalVolume* DetectorConstruction::Construct()
 {
+    // create world
     G4NistManager* nist = G4NistManager::Instance();
     G4double worldSize = 1*m;
     G4Material* vacuum = nist->FindOrBuildMaterial("G4_Galactic");
@@ -17,12 +18,20 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     auto physWorld = new G4PVPlacement(nullptr,G4ThreeVector(),logicWorld,"World",
     nullptr,false,0);
 
+    // create kapton tape
+    G4double sizeXY = 50*mm;
+    G4double sizeZ = 997*um;
+    G4double sizeKapton = 0.094*mm;
+    G4Material * kapton = nist->FindOrBuildMaterial("G4_KAPTON");
+    auto solidTape = new G4Box("Tape", 0.5*sizeXY, 0.5*sizeXY, 0.5*sizeKapton);
+    auto logicTape = new G4LogicalVolume(solidTape,kapton,"Tape");
+
+    G4ThreeVector tapePos = G4ThreeVector(0,0,-0.5*(sizeZ+sizeKapton));
+    new G4PVPlacement(nullptr,tapePos,logicTape,"Tape",logicWorld,false,0);
+
     // Create target
 
-    G4Material * tin = nist->FindOrBuildMaterial("G4_Sn");
     G4Material* tantalum = nist->FindOrBuildMaterial("G4_Ta");
-    G4double sizeXY = 10*cm;
-    G4double sizeZ = 997*um;
     auto solidTarget = new G4Box("Target", 0.5*sizeXY, 0.5*sizeXY, 0.5*sizeZ);
     auto logicTarget = new G4LogicalVolume(solidTarget,tantalum,"Target");
 

@@ -1,4 +1,5 @@
 #include "PrimaryGeneratorAction.hh"
+#include "RunAction.hh"
 
 #include "G4Event.hh"
 #include "G4ParticleTable.hh"
@@ -33,4 +34,8 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
     G4ThreeVector position = G4ThreeVector(0,0,-5* cm);
     fParticleGun->SetParticlePosition(position);
     fParticleGun->GeneratePrimaryVertex(event);
+    G4double energy = fParticleGun->GetParticleEnergy();
+    auto analysisManager = G4AnalysisManager::Instance();
+    analysisManager->FillH1(0,energy);
+
 }

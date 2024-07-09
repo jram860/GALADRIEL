@@ -32,7 +32,6 @@ void SteppingAction::UserSteppingAction(const G4Step* step) {
     if (nSecondaryParticle == 0) { return; }
 
     G4double electronEnergy = step->GetPreStepPoint()->GetKineticEnergy();
-
     const std::vector<const G4Track*>* secondaries = step->GetSecondaryInCurrentStep();
 
     for (G4int i=0; i<secondaries->size();i++) {
@@ -42,7 +41,9 @@ void SteppingAction::UserSteppingAction(const G4Step* step) {
         if (particleName == "gamma") {
             G4double energy = track->GetKineticEnergy();
             auto analysisManager = G4AnalysisManager::Instance();
-            analysisManager->FillH1(0,energy);
+            analysisManager->FillNtupleDColumn(absNTupleID,0,energy);
+            analysisManager->AddNtupleRow(absNTupleID);
+            analysisManager->FillH1(1,energy);
         }
     }
 }
