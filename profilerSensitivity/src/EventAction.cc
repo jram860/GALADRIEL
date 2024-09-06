@@ -43,11 +43,3 @@ void EventAction::AddEnergyDeposition(G4int detectorIndex, G4double edep)
         fEnergyDepositedTot +=edep;
     }
 }
-
-void EventAction::AddEnergyProfile(G4int detectorIndex, G4double xpos,G4double edep)
-{
-    /*Uncomment these lines to plot the spatial energy deposition profiles*/
-    
-    //auto analysisManager = G4AnalysisManager::Instance();
-    //analysisManager->FillH1(detectorIndex,xpos,edep);
-}

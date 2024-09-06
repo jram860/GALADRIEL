@@ -1,4 +1,4 @@
-# start up
+### Visualization Properties
 /run/initialize
 #
 # open an OpenGL viewer
@@ -16,13 +16,6 @@
 /vis/modeling/trajectories/create/drawByParticleID
 /vis/modeling/trajectories/drawByParticleID-0/default/setDrawStepPts true
 /vis/modeling/trajectories/drawByParticleID-0/default/setStepPtsSize 2
-#
-# draw only gammas:
-#/vis/filtering/trajectories/create/particleFilter
-#/vis/filtering/trajectories/particleFilter-0/add gamma
-#
-# Make the "World" box invisible
-#/vis/geometry/set/visibility World 0 false
-#
+
 # Superimpose all of the events from a given run:
 /vis/scene/endOfEventAction accumulate

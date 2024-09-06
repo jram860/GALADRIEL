@@ -1,2 +1,0 @@
-###/control/loop lower upper steps
-/control/loop run1.mac Ekin 10 1000 100

@@ -12,12 +12,12 @@ class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
     public:
         PrimaryGeneratorAction();
-        ~PrimaryGeneratorAction();
+        virtual ~PrimaryGeneratorAction();
 
         virtual void GeneratePrimaries(G4Event*);
         //const G4ParticleGun* GetParticleGun() const { return fParticleGun; }
         // G4ParticleGun* fParticleGun; // <-- Use the particle gun
-        G4GeneralParticleSource* fParticleGun = nullptr;
+        G4GeneralParticleSource* fParticleSource= nullptr;
 };
 
 #endif

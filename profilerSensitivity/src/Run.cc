@@ -58,51 +58,45 @@ void Run::Merge(const G4Run* run)
     G4Run::Merge(run);
 }
 
+
 void Run::EndOfRun(const G4Run* run)
 {
     G4String partName = fParticle->GetParticleName();
     G4int nbEvent = numberOfEvent;
 
-    G4int prec = G4cout.precision(3);
-
-    G4cout << "The run was " << nbEvent << " " << partName << " of "
-           << G4BestUnit(fEkin,"Energy") << " through the detector stack" << G4endl;
-    G4cout << "-----------------------------------------------------"
-           << G4endl;
-    if (nbEvent == 0) return;
-
-    std::ios::fmtflags mode = G4cout.flags();
+    G4cout << "The run was " << nbEvent << " " << partName << " of " << G4BestUnit(fEkin,"Energy") << " through the profiler" << G4endl;
+    G4cout << std::string(80, '-') << G4endl;
     G4cout << "Total energy deposited in: " << G4endl;
 
-    for (G4int im = 0; im<kDet; im++){
-        G4cout
-            << "\n   Detector " << im << ": "
-            << std::setprecision(5)
-            << std::setw(6) << G4BestUnit(energyDepositionDetector[im],"Energy");
+    for (G4int i = 0; i <kDet; i++) {
+        G4cout << "\n\tDetector " << i << ": " << std::setprecision(5) << std::setw(6) << G4BestUnit(energyDepositionDetector[i],"Energy");   
     }
-    G4cout << G4endl;
-    G4cout
-            << "\n total Fiter Stack: "
-            << std::setprecision(5)
-            << std::setw(6) << G4BestUnit(fEnergyDetectorTot,"Energy"); 
-    G4cout  << "\n-----------------------------------------------------"
-            << G4endl;
-
-    std::ofstream outFile("energy_deposition.txt", std::ios::app);
-    if(run->GetRunID() == 0){
-        outFile << "# RunNo. " << "E_0" << " ";
-        outFile << "Total Energy (all MeV) ";
+    G4cout<<G4endl;
+    
+    G4cout << std::string(80,'-') << G4endl;
+    if (run->GetRunID()==0){
+        std::ofstream outFile("energy_deposition.txt");
+        outFile << std::string(80,'#') << G4endl;
+        outFile << "### Normalized dose (MeV) per detector over a range of monoenergetic beams.\n"
+                << std::string(80,'#')
+                << "\n";
+        outFile << "### Run No." << std::setw(15) << "E_init" << std::setw(15) << "E_tot";
         for (G4int k=0; k<kDet; k++) {
-            outFile << " Detector " << k << " "; 
+            outFile <<std::setw(14) << "Detector_" << k; 
         }
         outFile <<"\n";
+        outFile << std::setw(11) << run->GetRunID() << std::setw(15) << fEkin << std::setw(15) <<std::setprecision(5)<< fEnergyDetectorTot;
+        for (G4int k=0; k<kDet; k++){
+            outFile << std::setw(15) << std::setprecision(5) << energyDepositionDetector[k]/MeV;
+        }
+        outFile << "\n";
+    } else {
+        std::ofstream outFile("energy_deposition.txt", std::ios::app);
+            outFile << std::setw(11) << run->GetRunID()<< std::setw(15) << fEkin << std::setw(15) << fEnergyDetectorTot/MeV;
+            for (G4int k=0; k<kDet; k++){
+                outFile << std::setw(15) << energyDepositionDetector[k]/MeV;
+            }
+            outFile << "\n";
+            outFile.close();
     }
-
-    outFile << run->GetRunID()<< " " << fEkin << " " << fEnergyDetectorTot << " ";
-    for (G4int k=0; k<kDet; k++){
-        outFile << energyDepositionDetector[k] << " ";
-    }
-    outFile << "\n";
-    outFile.close();
-
 }

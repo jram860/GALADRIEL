@@ -26,33 +26,9 @@ G4Run*RunAction::GenerateRun()
     return fRun;
 }
 
-void RunAction::BeginOfRunAction(const G4Run*)
+void RunAction::BeginOfRunAction(const G4Run* aRun)
 {
-    /*Uncomment the commented lines for the spatial energy deposition profiles*/
-
-    //auto analysisManager = G4AnalysisManager::Instance();
-
-    //Default Settings
-    //analysisManager->SetDefaultFileType("root");
-    //analysisManager->SetVerboseLevel(0);
-    //analysisManager->SetFileName("deposition_profiles");
-
     G4int NoDetectors = fDetector->GetNbOfDetectors();
-    //set up h1's
-    // for (G4int i = 0; i < NoDetectors; i++)
-    // {
-    //      G4cout << "Creating histogram for detector " << i << G4endl;
-    //      analysisManager->CreateH1("Detector_" + std::to_string(i), "Energy deposition in detector " + std::to_string(i), 200, -25*mm, 25*mm);
-    //      analysisManager->SetH1XAxisTitle(i, "Location (mm)");
-	//      analysisManager->SetH1YAxisTitle(i, "Dose (keV)");
-
-    //      analysisManager->SetH1Activation(i, false);
-    // }
-
-   //analysisManager->SetActivation(true);
-
-    //auto analysisManager = G4AnalysisManager::Instance();
-    //analysisManager->OpenFile();
     // keep run condition
     if ( fPrimary ) { 
         G4ParticleDefinition* particle 
@@ -66,14 +42,11 @@ void RunAction::BeginOfRunAction(const G4Run*)
     fTimer.Start(); // Start time
 }
 
-void RunAction::EndOfRunAction(const G4Run* run)
+void RunAction::EndOfRunAction(const G4Run* aRun)
 {
-    //auto analysisManager = G4AnalysisManager::Instance();
-    //analysisManager->Write();
-    //analysisManager->CloseFile();
     fTimer.Stop();
     if (isMaster) {
-            fRun->EndOfRun(run);
+            fRun->EndOfRun(aRun);
             PrintTime();
         }
 }

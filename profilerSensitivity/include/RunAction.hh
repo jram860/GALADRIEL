@@ -19,8 +19,8 @@ public:
     virtual ~RunAction();
     
     virtual G4Run* GenerateRun();
-    virtual void BeginOfRunAction(const G4Run*);
-    virtual void EndOfRunAction(const G4Run*);
+    virtual void BeginOfRunAction(const G4Run* aRun);
+    virtual void EndOfRunAction(const G4Run* aRun);
     
     void AddEnergyDeposition(G4double energy, G4int detectorIndex);
     const std::vector<G4double>& GetEnergyDeposited() const;

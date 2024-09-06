@@ -1,5 +1,4 @@
 #include "DetectorConstruction.hh"
-#include "DetectorMessenger.hh"
 #include "G4Material.hh"
 #include "G4NistManager.hh"
 #include "G4Box.hh"
@@ -11,23 +10,85 @@
 #include "G4VisAttributes.hh"
 #include "G4Color.hh"
 
+#include <fstream>
 #include <sstream>
 
-DetectorConstruction::DetectorConstruction() : G4VUserDetectorConstruction(),
-  fFilterMaterials(),
-  fDetectorMaterials(),
-  fFilterThicknesses(),
-  fDetectorThicknesses() {}
-  
-DetectorConstruction::~DetectorConstruction() {
-    delete fMessenger;
+DetectorConstruction::DetectorConstruction() : G4VUserDetectorConstruction() {}
+
+
+G4VPhysicalVolume* DetectorConstruction::Construct() {
+    DefineMaterials();
+    ReadGeometryFile("geomConfig.txt");
+    // Construct the World
+    G4NistManager* nist = G4NistManager::Instance();
+    G4double worldSizeXY = 2*calorSizeXY;
+    if (calorSizeZ<=1*m) {worldSizeZ = 2*m;} else {worldSizeZ =2.5*calorSizeZ;}
+    worldMaterial = nist->FindOrBuildMaterial("G4_Galactic");
+    auto solidWorld = new G4Box("World", worldSizeXY/2,worldSizeXY/2,worldSizeZ/2);
+    logicWorld = new G4LogicalVolume(solidWorld,worldMaterial,"World");
+    auto physiWorld = new G4PVPlacement(nullptr,G4ThreeVector(),logicWorld,"World",nullptr,false,0);
+
+    ConstructConverter(logicWorld);
+    ConstructCalorimeter(logicWorld);
+    PrintCalorParameters();
+
+    return physiWorld;
 }
 
+void DetectorConstruction::AddConverter() {
+    if (fConverterVol) {
+        G4cout << "Cannot add converter, it already exists." << G4endl;
+        return;
+    }
 
-G4VPhysicalVolume* DetectorConstruction::Construct()
-{
-    DefineMaterials();
-    return ConstructCalorimeter();
+    ConstructConverter(logicWorld);
+}
+
+void DetectorConstruction::RemoveConverter() {
+    if (fConverterVol) {
+        delete fConverterVol;
+        fConverterVol = nullptr;
+    } 
+    else {
+        G4cout << "Cannot delete converter, it doesn't exist." << G4endl;
+    }
+}
+
+void DetectorConstruction::SetConverterPosition(G4double z) {
+    convPosZ = z;
+    delete fConverterVol;
+    ConstructConverter(logicWorld);
+
+}
+
+void DetectorConstruction::ReadGeometryFile(const std::string& fileName) {
+    std::ifstream file(fileName);
+    std::string line;
+
+    if (!file.is_open()) {
+        G4cerr << "Error opening file: " << fileName << G4endl;
+        return;
+    }
+
+    while (std::getline(file,line)) {
+        if (line.empty() || line[0] == '#') {continue;}
+
+        std::istringstream iss(line);
+        
+        iss >> volType >> volMaterial >> volThickness;
+
+        if (iss.fail()) {
+            G4cerr << "Error reading line: " << line << G4endl;
+            continue;
+        }
+
+        calorSizeZ += volThickness*mm;
+
+        layerType.push_back(volType);
+        layerMaterial.push_back(volMaterial);
+        layerThickness.push_back(volThickness*mm);
+
+    }
 }
 
 void DetectorConstruction::DefineMaterials() {
@@ -55,108 +116,93 @@ void DetectorConstruction::DefineMaterials() {
     CSI->AddElement(nist->FindOrBuildElement("Cs"),50.12*perCent);
     CSI->AddElement(nist->FindOrBuildElement("I"), 48.81*perCent);
     CSI->AddElement(nist->FindOrBuildElement("Tl"),1.07*perCent);
-    
-    //G4cout << *(G4Material::GetMaterialTable()) << G4endl;
 
 }
-G4VPhysicalVolume* DetectorConstruction::ConstructCalorimeter()
-{
-    // World
-    G4NistManager* nist = G4NistManager::Instance();
-    G4Material* worldMat = nist->FindOrBuildMaterial("G4_Galactic");
+
+void DetectorConstruction::ConstructConverter(G4LogicalVolume* logicWorld) {
+    G4NistManager *nist = G4NistManager::Instance();
+
+    G4Material *kapton = nist->FindOrBuildMaterial("G4_KAPTON");
+    G4Material *foilMat = nist->FindOrBuildMaterial("G4_Ta");
+
+    G4double convTotalZ = tapeSizeZ + foilSizeZ;
+
+    // create converter system
+    G4Box *solidConv = new G4Box("Converter", calorSizeXY/2, calorSizeXY/2, convTotalZ/2);
+    G4LogicalVolume* logicConv = new G4LogicalVolume(solidConv,worldMaterial,"Converter");
+    fConverterVol = new G4PVPlacement(0,G4ThreeVector(0,0,-convPosZ),logicConv,"Converter",logicWorld,false,0,false);
+
+    //create the tape volume
+    G4Box* solidTape = new G4Box("Tape", calorSizeXY/2,calorSizeXY/2,tapeSizeZ/2);
+    G4LogicalVolume* logicTape = new G4LogicalVolume(solidTape, kapton, "Tape");
+    new G4PVPlacement(0,G4ThreeVector(0,0,-0.5*(convTotalZ-tapeSizeZ)),logicTape,"Tape",logicConv,false,0,false);
+    //create the converter foil volume
+    G4Box *solidFoil = new G4Box("Foil", calorSizeXY/2,calorSizeXY/2,foilSizeZ/2);
+    G4LogicalVolume *logicFoil = new G4LogicalVolume(solidFoil,foilMat,"Tape");
+    new G4PVPlacement(0,G4ThreeVector(0,0,0.5*(convTotalZ-foilSizeZ)),logicFoil,"Foil",logicConv,false,0,false);
+}
+
+void DetectorConstruction::ConstructCalorimeter(G4LogicalVolume* logicWorld) {
+
+    // Set some visualization attributes:
+    G4VisAttributes* calorVisAtt = new G4VisAttributes(G4Colour(0.0,0.0,1.0)); //Calorimeter is blue
+    calorVisAtt->SetVisibility(true);
     
-    G4double worldSize = 1.0*m;
-    G4Box* solidWorld = new G4Box("World", worldSize/2, worldSize/2, worldSize/2);
-    G4LogicalVolume* logicWorld = new G4LogicalVolume(solidWorld, worldMat, "World");
-    G4VPhysicalVolume* physWorld = new G4PVPlacement(0, G4ThreeVector(), logicWorld, "World", 0, false, 0, true);
-
-    G4double sizeXY = 50*mm; // transverse dimension
-
-    //Converter Foil
-
-    G4Material*kapton = nist->FindOrBuildMaterial("G4_KAPTON");
-    G4Material*converterMat = nist->FindOrBuildMaterial("G4_Ta");
-    G4double foil_thickness = 997*um;
-    G4double kapton_thickness = 0.094*mm;
-
-    G4Box*solidtape = new G4Box("Tape",sizeXY/2,sizeXY/2, kapton_thickness/2);
-    G4LogicalVolume* logicTape = new G4LogicalVolume(solidtape,kapton,"Tape");
-    new G4PVPlacement(0,G4ThreeVector(0,0,-kapton_thickness/2),logicTape,"Tape",logicWorld,false,0,true);
-
-    G4Box* solidFoil = new G4Box("Foil", sizeXY/2,sizeXY/2,foil_thickness/2);
-    G4LogicalVolume* logicFoil = new G4LogicalVolume(solidFoil,converterMat,"Foil");
-    new G4PVPlacement(0,G4ThreeVector(0,0,foil_thickness/2),logicFoil,"Foil",logicWorld,false,0,true);
-
-    // Calorimeter
-    G4double posZ = 3*cm; // Initial Z position
-
-    G4VisAttributes* detectorVisAtt = new G4VisAttributes(G4Colour(0.0, 1.0, 0.0)); // Green
+    G4VisAttributes* filterVisAtt = new G4VisAttributes(G4Colour(1.0, 0.0, 0.0)); // Filters are red
+    filterVisAtt->SetVisibility(true);    
+    
+    G4VisAttributes* detectorVisAtt = new G4VisAttributes(G4Colour(0.0, 1.0, 0.0)); // Detectors are green
     detectorVisAtt->SetVisibility(true);
 
-    G4VisAttributes* filterVisAtt = new G4VisAttributes(G4Colour(1.0, 0.0, 0.0)); // Red
-    filterVisAtt->SetVisibility(true);
+    // Construct the Calorimeter
+    G4NistManager *nist = G4NistManager::Instance();
 
-    NbOfDetectors = fFilterMaterials.size();
-    G4cout << "### The stack is: " << fFilterMaterials.size() << " Layers" << G4endl;
-    
-    for(G4int i = 0; i < fFilterMaterials.size(); ++i)
-    {
-         // Filter
-        G4Material* filter_mat = nist->FindOrBuildMaterial(fFilterMaterials[i]);
-        G4Box* solidFilter = new G4Box("Filter", 0.5*sizeXY, 0.5*sizeXY, fFilterThicknesses[i]/2);
-        G4LogicalVolume* logicFilter = new G4LogicalVolume(solidFilter, filter_mat, "Filter");
-        logicFilter->SetVisAttributes(filterVisAtt);
-        new G4PVPlacement(0, G4ThreeVector(0, 0, posZ + fFilterThicknesses[i]/2), logicFilter, "Filter", logicWorld, false, i, true);
-        posZ += fFilterThicknesses[i];
+    auto solidCalor = new G4Box("Calorimeter", calorSizeXY/2,calorSizeXY/2,calorSizeZ/2);
+    auto logicCalor = new G4LogicalVolume(solidCalor,worldMaterial,"Calorimeter");
+    //Assign the calorimeter volume to the logical volume. This makes some the logic easier to interpret in other classes. 
+    calorVolume = logicCalor;
+    logicCalor->SetVisAttributes(calorVisAtt);
+    new G4PVPlacement(0,G4ThreeVector(0,0,calorSizeZ/2),logicCalor,"Calorimeter",logicWorld,false,0,false);
 
-        // Detector
+    // The initial position of the layers in the calorimeter.
+    // The front face of calorimeter is at origin. 
+    G4double z = -calorSizeZ/2;
 
-        G4Material* detector_mat = nist->FindOrBuildMaterial(fDetectorMaterials[i]);
-        if (!detector_mat) {
-            G4Material* detector_mat = G4Material::GetMaterial(fDetectorMaterials[i]);
+    for (size_t i = 0; i < layerType.size(); ++i) {
+
+        G4Material* layerMat = nist->FindOrBuildMaterial("G4_" + layerMaterial[i]);
+        if (!layerMat) {layerMat = G4Material::GetMaterial(layerMaterial[i]);}
+
+        if(layerType[i] == "Filter"){
+            G4Box* solidFilter = new G4Box("Filter", calorSizeXY/2, calorSizeXY/2, layerThickness[i]/2);
+            G4LogicalVolume* logicFilter = new G4LogicalVolume(solidFilter,layerMat,"logicFilter");
+            logicFilter->SetVisAttributes(filterVisAtt);
+            new G4PVPlacement(0,G4ThreeVector(0,0,z+layerThickness[i]/2),logicFilter,"Filter",logicCalor,false,i,true);
+            
+            z += layerThickness[i];
         }
-        G4Box* solidDetector = new G4Box("Detector", 0.5*sizeXY, 0.5*sizeXY, fDetectorThicknesses[i]/2);
-        G4LogicalVolume* logicDetector = new G4LogicalVolume(solidDetector, detector_mat, "Detector");
-        logicDetector->SetVisAttributes(detectorVisAtt);
-        new G4PVPlacement(0, G4ThreeVector(0, 0, posZ + fDetectorThicknesses[i]/2), logicDetector, "Detector", logicWorld, false, i, true);
-        posZ += fDetectorThicknesses[i];
-    }
-    return physWorld;
-}
 
-void DetectorConstruction::SetFilterMaterials(const G4String& materials) {
-    std::istringstream iss(materials);
-    fFilterMaterials.clear();
-    G4String material;
-    while (iss >> material) {
-        fFilterMaterials.push_back(material);
+        if (layerType[i] == "Detector") {
+            G4Box* solidDetector = new G4Box("Detector",calorSizeXY/2,calorSizeXY/2,layerThickness[i]/2);
+            G4LogicalVolume* logicDetector = new G4LogicalVolume(solidDetector,layerMat,"logicDetector");
+            logicDetector->SetVisAttributes(detectorVisAtt);
+            new G4PVPlacement(0,G4ThreeVector(0,0,z+layerThickness[i]/2),logicDetector,"Detector",logicCalor,false,i,true);
+
+            z += layerThickness[i];
+
+            NbOfDetectors += 1;
+        }
     }
 }
 
-void DetectorConstruction::SetDetectorMaterials(const G4String& materials) {
-    std::istringstream iss(materials);
-    fDetectorMaterials.clear();
-    G4String material;
-    while (iss >> material) {
-        fDetectorMaterials.push_back(material);
-    }
+void DetectorConstruction::PrintCalorParameters() {
+    //Print out Calorimeter geometry information
+    G4int nbLayers = layerType.size();
+    G4cout << std::string(80, '-') << G4endl;
+    G4cout << "---> Calorimeter is constructed" << G4endl;
+    G4cout << "\t---> Number of Layers: " << nbLayers << G4endl;
+    G4cout << "\t---> Number of Detectors: " << NbOfDetectors << G4endl;
+    G4cout << "\t---> Total Thickness: " << calorSizeZ/mm << "mm" << G4endl;
+    G4cout << "\t--->  Transverse Size: " << calorSizeXY/mm << "mm" << G4endl;
+    G4cout << std::string(80, '-') << G4endl;
 }
-
-void DetectorConstruction::SetFilterThicknesses(const G4String& thicknesses) {
-    std::istringstream iss(thicknesses);
-    fFilterThicknesses.clear();
-    G4double thickness;
-    while (iss >> thickness) {
-        fFilterThicknesses.push_back(thickness*mm);
-    }
-}
-
-void DetectorConstruction::SetDetectorThicknesses(const G4String& thicknesses) {
-    std::istringstream iss(thicknesses);
-    fDetectorThicknesses.clear();
-    G4double thickness;
-    while (iss >> thickness) {
-        fDetectorThicknesses.push_back(thickness*mm);
-    }
-}
-

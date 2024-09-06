@@ -10,8 +10,8 @@
 
 #include "ActionInitialization.hh"
 #include "DetectorConstruction.hh"
+#include "ConverterMessenger.hh"
 
-#include "DetectorMessenger.hh"
 int main(int argc,char** argv)
 {
     G4UIExecutive* ui = nullptr;
@@ -24,8 +24,6 @@ int main(int argc,char** argv)
 	DetectorConstruction* detector = new DetectorConstruction;
  	runManager->SetUserInitialization(detector);
 
-	new DetectorMessenger(detector);
-
   	auto physicsList = new FTFP_BERT;
   	physicsList->RegisterPhysics(new G4StepLimiterPhysics());
   	runManager->SetUserInitialization(physicsList);
@@ -36,8 +34,8 @@ int main(int argc,char** argv)
     G4VisManager* visManager = new G4VisExecutive;
 	visManager->Initialize();
 
+	auto converterMessenger = new ConverterMessenger(detector);
     G4UImanager* UImanager = G4UImanager::GetUIpointer();
-	UImanager->ApplyCommand("/control/execute geom.mac");
 	runManager->GeometryHasBeenModified();
 	// Run macro or start UI
 	if (!ui) {
