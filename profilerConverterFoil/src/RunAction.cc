@@ -64,14 +64,14 @@ void RunAction::BeginOfRunAction(const G4Run*)
     fTimer.Start(); // Start time
 }
 
-void RunAction::EndOfRunAction(const G4Run*)
+void RunAction::EndOfRunAction(const G4Run* aRun)
 {
     auto analysisManager = G4AnalysisManager::Instance();
     analysisManager->Write();
     analysisManager->CloseFile();
     fTimer.Stop();
     if (isMaster) {
-            fRun->EndOfRun();
+            fRun->EndOfRun(aRun);
             PrintTime();
         }
 }

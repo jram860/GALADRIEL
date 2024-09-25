@@ -10,31 +10,38 @@
 
 #include "ActionInitialization.hh"
 #include "DetectorConstruction.hh"
+#include "PrimaryGeneratorAction.hh"
 #include "ConverterMessenger.hh"
+#include "PhysicsList.hh"
 
 int main(int argc,char** argv)
 {
-    G4UIExecutive* ui = nullptr;
+    G4long seed = std::time(nullptr);
+	CLHEP::HepRandom::setTheSeed(3); // 3 for good luck
+
+	G4UIExecutive* ui = nullptr;
     if (argc == 1){
         ui = new G4UIExecutive(argc,argv);
     }
 
     auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
 
-	DetectorConstruction* detector = new DetectorConstruction;
+	DetectorConstruction* detector = new DetectorConstruction();
  	runManager->SetUserInitialization(detector);
 
-  	auto physicsList = new FTFP_BERT;
-  	physicsList->RegisterPhysics(new G4StepLimiterPhysics());
-  	runManager->SetUserInitialization(physicsList);
+	runManager->SetUserInitialization(new PhysicsList());
 
   	runManager->SetUserInitialization(new ActionInitialization(detector));
     
-	runManager->Initialize();
-    G4VisManager* visManager = new G4VisExecutive;
+	PrimaryGeneratorAction *primary = new PrimaryGeneratorAction();
+	runManager -> SetUserInitialization(new ActionInitialization(detector));
+
+	G4VisManager* visManager = new G4VisExecutive;
 	visManager->Initialize();
+	runManager->Initialize();
 
 	auto converterMessenger = new ConverterMessenger(detector);
+	
     G4UImanager* UImanager = G4UImanager::GetUIpointer();
 	runManager->GeometryHasBeenModified();
 	// Run macro or start UI

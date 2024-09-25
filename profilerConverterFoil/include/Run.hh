@@ -22,7 +22,7 @@ class Run : public G4Run {
         void SumEvents2(G4double);
 
         virtual void Merge(const G4Run*);
-        void EndOfRun();
+        void EndOfRun(const G4Run *run);
 
     private:
         DetectorConstruction* fDetector = nullptr;

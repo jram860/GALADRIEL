@@ -119,6 +119,8 @@ void DetectorConstruction::ConstructCalorimeter(G4LogicalVolume* logicWorld) {
     // The initial position of the layers in the calorimeter.
     // The front face of calorimeter is at origin. 
     G4double z = -calorSizeZ/2;
+    G4int j_filter = 0;
+    G4int j_detector=0;
 
     for (size_t i = 0; i < layerType.size(); ++i) {
 
@@ -129,18 +131,20 @@ void DetectorConstruction::ConstructCalorimeter(G4LogicalVolume* logicWorld) {
             G4Box* solidFilter = new G4Box("Filter", calorSizeXY/2, calorSizeXY/2, layerThickness[i]/2);
             G4LogicalVolume* logicFilter = new G4LogicalVolume(solidFilter,layerMat,"logicFilter");
             logicFilter->SetVisAttributes(filterVisAtt);
-            new G4PVPlacement(0,G4ThreeVector(0,0,z+layerThickness[i]/2),logicFilter,"Filter",logicCalor,false,i,true);
+            new G4PVPlacement(0,G4ThreeVector(0,0,z+layerThickness[i]/2),logicFilter,"Filter",logicCalor,false,j_filter,true);
             
             z += layerThickness[i];
+            j_filter++;
         }
 
         if (layerType[i] == "Detector") {
             G4Box* solidDetector = new G4Box("Detector",calorSizeXY/2,calorSizeXY/2,layerThickness[i]/2);
             G4LogicalVolume* logicDetector = new G4LogicalVolume(solidDetector,layerMat,"logicDetector");
             logicDetector->SetVisAttributes(detectorVisAtt);
-            new G4PVPlacement(0,G4ThreeVector(0,0,z+layerThickness[i]/2),logicDetector,"Detector",logicCalor,false,i,true);
+            new G4PVPlacement(0,G4ThreeVector(0,0,z+layerThickness[i]/2),logicDetector,"Detector",logicCalor,false,j_detector,true);
 
             z += layerThickness[i];
+            j_detector++;
 
             NbOfDetectors += 1;
         }

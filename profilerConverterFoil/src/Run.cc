@@ -58,18 +58,18 @@ void Run::Merge(const G4Run* run)
     G4Run::Merge(run);
 }
 
-void Run::EndOfRun()
+void Run::EndOfRun(const G4Run *run)
 {
     //G4String partName = fParticle->GetParticleName();
-    G4int nbEvent = numberOfEvent;
+    // G4int nbEvent = numberOfEvent;
 
-    G4int prec = G4cout.precision(3);
+    // G4int prec = G4cout.precision(3);
 
     // G4cout << "The run was " << nbEvent << " " << partName << " of "
     //        << G4BestUnit(fEkin,"Energy") << " through the detector stack" << G4endl;
-    G4cout << "-----------------------------------------------------"
-            << G4endl;
-    if (nbEvent == 0) return;
+    // G4cout << "-----------------------------------------------------"
+            // << G4endl;
+    // if (nbEvent == 0) return;
 
     std::ios::fmtflags mode = G4cout.flags();
     G4cout << "Total energy deposited in: " << G4endl;
@@ -87,5 +87,33 @@ void Run::EndOfRun()
             << std::setw(6) << G4BestUnit(fEnergyDetectorTot,"Energy"); 
     G4cout  << "\n-----------------------------------------------------"
             << G4endl;
+
+    // output text file
+    G4cout << std::string(80,'-') << G4endl;
+    if (run->GetRunID()==0){
+        std::ofstream outFile("energy_deposition.txt");
+        outFile << std::string(80,'#') << G4endl;
+        outFile << "### Normalized dose (MeV) per detector over a range of monoenergetic beams.\n"
+                << std::string(80,'#')
+                << "\n";
+        outFile << "Run_No " << "E_init " << "E_tot ";
+        for (G4int k=0; k<kDet; k++) {
+            outFile << "Detector_" << k << " "; 
+        }
+        outFile <<"\n";
+        outFile << run->GetRunID() << " " << fEkin << " " << std::setprecision(5)<< fEnergyDetectorTot << " ";
+        for (G4int k=0; k<kDet; k++){
+            outFile << std::setprecision(5) << energyDepositionDetector[k]/MeV << " ";
+        }
+        outFile << "\n";
+    } else {
+        std::ofstream outFile("energy_deposition.txt", std::ios::app);
+            outFile << run->GetRunID() << " " << fEkin << " " << fEnergyDetectorTot/MeV << " ";
+            for (G4int k=0; k<kDet; k++){
+                outFile << energyDepositionDetector[k]/MeV << " ";
+            }
+            outFile << "\n";
+            outFile.close();
+    }
 
 }
