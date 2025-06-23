@@ -1,5 +1,0 @@
-################################################################################
-### Normalized dose (MeV) per detector over a range of monoenergetic beams.
-################################################################################
-Run_No E_init E_tot Detector_0 Detector_1 Detector_2 Detector_3 Detector_4 Detector_5 
-0 0 4.8897e+05 3.8299e+05 1.0534e+05 269.92 217.8 126.49 27.348 
