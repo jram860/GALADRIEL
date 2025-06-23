@@ -1,4 +1,4 @@
-# Private Codebase for Geant4 simulations of beam profiler diagnostics at GALADRIEL
+# Codebase for Geant4 simulations of beam profiler diagnostics at GALADRIEL
 
 
 ### Contents
