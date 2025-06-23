@@ -1,8 +1,7 @@
 # Codebase for Geant4 simulations of beam profiler diagnostics at GALADRIEL
 
-[!IMPORTANT] 
-
-Some of interactive plotting and data processing is done through CERN ROOT, particularly histogram generation. Documentation and an installation guide may be found here: https://root.cern/.
+>[!IMPORTANT] 
+> Some of interactive plotting and data processing is done through CERN ROOT, particularly histogram generation. Documentation and an installation guide may be found here: https://root.cern/.
 
 If you don't want to use ROOT, you can change the data output type in the `RunAction` class.
 
@@ -15,5 +14,5 @@ If you don't want to use ROOT, you can change the data output type in the `RunAc
 
 - SensitivityProfiler: Generate the Sensitivity curves for a profiler over a range of monoenergetic pencil beams.
 
-[!TIP]
-See each directory's `README` for specific user instructions
+>[!TIP]
+> See each directory's `README` for specific user instructions
