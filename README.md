@@ -1,14 +1,19 @@
 # Codebase for Geant4 simulations of beam profiler diagnostics at GALADRIEL
 
+[!IMPORTANT] 
+
+Some of interactive plotting and data processing is done through CERN ROOT, particularly histogram generation. Documentation and an installation guide may be found here: https://root.cern/.
+
+If you don't want to use ROOT, you can change the data output type in the `RunAction` class.
 
 ### Contents
-- Spectrum Sims: Generates the bremsstrahlung X-Ray energy distribution at the backside of a foil target irradiated with a pencil beam.
+- Archive: Contains old, buggy scripts
 
-- profilerConverterFoil: Generates the spatial distribution in scintillating fiber arrays for the GALADRIEL Combined Profiler Experiment. There is a converter foil in front of the detector.
+- BremSpec: Find the forward secondary particle energy distribution off of a converter foil from an electrion pencil beam of known energy spectrum.
 
-- profilerSensitivity: Genereates the Sensitivity curves for a profiler over a range of monoenergetic pencil beams.
+- ConverterFoilProfiler: Generate the spatial energy distribution in scintillating fiber arrays for the JBP Filter Pack experiment. There is a converter foil in front of the detector.
 
+- SensitivityProfiler: Generate the Sensitivity curves for a profiler over a range of monoenergetic pencil beams.
 
-_See each directory's README for specific user instructions_
-
-!!! *Note: Some of the plotting functionality in these scripts uses CERN ROOT, documentation and installation guide may be found here: https://root.cern/*
+[!TIP]
+See each directory's `README` for specific user instructions
