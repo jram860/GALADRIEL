@@ -1,8 +1,0 @@
-# Calorimeter geometry configuration File
-# Select a material from the Geant4 NIST material database: https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/html/Appendix/materialNames.html
-# Format: LayerType  Material  Thickness(mm)
-
-Filter      Al      3
-Detector    Al      4
-Filter      Al      3
-Detector    Al      4

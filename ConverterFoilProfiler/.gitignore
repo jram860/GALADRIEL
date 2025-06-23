@@ -1,0 +1,5 @@
+# ignore the entire build directory
+build/
+
+# ignmore vscode stuff
+.vscode

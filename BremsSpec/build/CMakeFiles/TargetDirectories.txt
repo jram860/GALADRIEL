@@ -1,0 +1,7 @@
+/Users/jram/Geant4/Projects/GA-Filter-Stack/BremsSpec/build/CMakeFiles/bremsSpec.dir
+/Users/jram/Geant4/Projects/GA-Filter-Stack/BremsSpec/build/CMakeFiles/edit_cache.dir
+/Users/jram/Geant4/Projects/GA-Filter-Stack/BremsSpec/build/CMakeFiles/rebuild_cache.dir
+/Users/jram/Geant4/Projects/GA-Filter-Stack/BremsSpec/build/CMakeFiles/list_install_components.dir
+/Users/jram/Geant4/Projects/GA-Filter-Stack/BremsSpec/build/CMakeFiles/install.dir
+/Users/jram/Geant4/Projects/GA-Filter-Stack/BremsSpec/build/CMakeFiles/install/local.dir
+/Users/jram/Geant4/Projects/GA-Filter-Stack/BremsSpec/build/CMakeFiles/install/strip.dir

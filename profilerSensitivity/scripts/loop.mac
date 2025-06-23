@@ -1,5 +1,0 @@
-### Control loop to initialize range of monoenergtic incident beams
-### For-Loop Format: /control/loop  target_file loop_var lower_bound upper_bound steps
-### For-Each Format: /control/foreach target_file loop_var var_values
-##########################################################################
-/control/loop run.mac Ekin 10 20 10
