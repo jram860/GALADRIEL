@@ -2,6 +2,9 @@
 # Setup the project
 cmake_minimum_required(VERSION 3.16...3.30)
 project(BREMSSPEC)
+
+# Ensure correct SDK compatibility
+set(CMAKE_OSX_DEPLOYMENT_TARGET "15" CACHE STRING "Minimum OS X deployment version")
 #----------------------------------------------------------------------------
 # Find Geant4 package, activating all available UI and Vis drivers by default
 # You can set WITH_GEANT4_UIVIS to OFF via the command line or ccmake/cmake-gui
